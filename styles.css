@@ -1,0 +1,28 @@
+body{
+    color: white;
+    font-family: Verdana;
+    text-align: center;
+    background: #833AB4;
+    background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
+}
+input[type=number]:focus, textarea:focus{
+    outline: none;
+}
+input[type=number]{
+    color: white;
+    border: 0px solid;
+    border-radius: 1rem;
+    background-color: dodgerblue;
+}
+button{
+    color: white;
+    border: 0px solid;
+    border-radius: 1em;
+    background-color: darkorchid;
+}
+.timer{
+    background-color: black;
+    color: white;
+    width: 80px;
+    margin: auto;
+}
