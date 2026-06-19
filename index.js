@@ -41,8 +41,7 @@ startButton.addEventListener("click", () => {
                 clearInterval(timerInterval);
                 loop = false;
                 startButton.disabled = false;
-                playAlertSound()
-                window.alert(`Timer has hit 0!`);
+                playAlertSound();
             } else {
                 counter.textContent = currentVal - 1;
             }
