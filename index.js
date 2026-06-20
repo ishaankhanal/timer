@@ -17,7 +17,12 @@ function playAlertSound() {
     });
 }
 
+function stopAllSounds(){
+    document.querySelectorAll('audio').forEach(el => el.pause());
+}
+
 confirmButton.addEventListener("click", () => {
+    stopAllSounds()
     const val = stopwatchNumberTB.valueAsNumber;
     if (!isNaN(val) && val >= 0) {
         counter.textContent = val;
@@ -26,6 +31,7 @@ confirmButton.addEventListener("click", () => {
 
 startButton.addEventListener("click", () => {
     if (loop === false) {
+        stopAllSounds()
 
         let currentVal = parseInt(counter.textContent, 10);
 
